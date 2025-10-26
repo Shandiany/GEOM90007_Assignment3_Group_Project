@@ -148,6 +148,72 @@ body {
   padding-bottom: 0.5rem;
 }
 
+/* FAQ Layout */
+.faq-page { padding-bottom: 4rem; }
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.faq-column { display: flex; flex-direction: column; gap: 2rem; }
+.faq-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 16px 36px rgba(17, 24, 39, 0.08);
+  border: 1px solid rgba(40, 162, 124, 0.12);
+}
+.faq-card h2 {
+  color: #28A27C;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.faq-card p,
+.faq-card li {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+}
+.faq-card a { color: #28A27C; font-weight: 600; text-decoration: none; }
+.faq-card a:hover { text-decoration: underline; }
+.faq-list { margin: 0; padding-left: 1.5rem; }
+.faq-list.placeholder li { list-style: disc; }
+
+.creators-card { padding-bottom: 2rem; }
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.creator-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #F5F8F7;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12);
+}
+.creator-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid #28A27C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #28A27C;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.18);
+}
+.creator-meta { display: flex; flex-direction: column; gap: 0.2rem; }
+.creator-name { color: #111827; font-weight: 600; }
+.creator-id { color: #6b7280; font-size: 0.9rem; }
+
 /* Navigation Active State */
 .nav-item.active {
   background-color: #28A27C;
@@ -161,9 +227,11 @@ body {
   .hero-title { font-size: 2rem; }
   .nav-menu { flex-direction: column; gap: .5rem; }
   .page-content { padding: 1rem; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .creators-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
   .cards-container { grid-template-columns: 1fr; }
   .dashboard-grid { grid-template-columns: 1fr; }
+  .creators-grid { grid-template-columns: 1fr; }
 }
-

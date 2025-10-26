@@ -20,7 +20,7 @@ home_page_ui <- function() {
     div(class = "hero-section",
       h1(class = "hero-title", "Discover Melbourne Like a Local"),
       p(class = "hero-subtitle", 
-        "Find the best time to visit, explore attractions, plan your budget, and avoid the crowds.")
+        "Find the best time to visit, explore attractions, plan your budget, and get quick answers to plan confidently.")
     ),
     
     # Feature Cards Section
@@ -36,7 +36,7 @@ home_page_ui <- function() {
               "Plan your visit based on Melbourne's unique four-seasons-in-one-day weather. Discover the best months for outdoor and indoor activities."),
           div(class = "card-chart", "Mini chart placeholder"),
           div(style = "margin-top: 0.75rem;",
-              actionButton("go_weather", "Read More", class = "chart-button"))
+              actionButton("go_weather", "Open Weather", class = "chart-button"))
         ),
         
         # Landmarks Card
@@ -49,7 +49,7 @@ home_page_ui <- function() {
               "Explore iconic locations and cultural experiences — from street art in Hosier Lane to the historic Flinders Street Station."),
           div(class = "card-chart", "Mini chart placeholder"),
           div(style = "margin-top: 0.75rem;",
-              actionButton("go_landmarks", "Read More", class = "chart-button"))
+              actionButton("go_landmarks", "Open Landmarks", class = "chart-button"))
         ),
         
         # Budget Card
@@ -62,20 +62,20 @@ home_page_ui <- function() {
               "Estimate your expenses with our interactive budget planner. Compare average costs for accommodation, dining, transport, and attractions."),
           div(class = "card-chart", "Mini chart placeholder"),
           div(style = "margin-top: 0.75rem;",
-              actionButton("go_budget", "Read More", class = "chart-button"))
+              actionButton("go_budget", "Open Budget", class = "chart-button"))
         ),
         
-        # Crowd Card
-        div(class = "feature-card white clickable", id = "crowd-card",
+        # FAQs Card
+        div(class = "feature-card white clickable", id = "faq-card",
           div(class = "card-header-row",
               div(class = "card-icon", "👥"),
-              div(class = "card-title", "Crowd")
+              div(class = "card-title", "FAQs & Support")
           ),
           div(class = "card-description",
-              "Avoid peak times at popular spots. Use crowd predictions to explore Melbourne with ease."),
+              "Browse quick answers, data notes, and meet the team."),
           div(class = "card-chart", "Mini chart placeholder"),
           div(style = "margin-top: 0.75rem;",
-              actionButton("go_crowd", "Read More", class = "chart-button"))
+              actionButton("go_faq", "Open FAQs", class = "chart-button"))
         )
       )
     )
@@ -118,13 +118,47 @@ budget_page_ui <- function() {
   )
 }
 
-# Crowd页面UI函数
-crowd_page_ui <- function() {
-  div(id = "crowd-page", style = "display: none;",
-    div(class = "page-content",
-      h1("Crowd Analysis Dashboard"),
-      p("Avoid peak times at popular spots with crowd predictions."),
-      div(class = "dashboard-grid"
+# FAQS页面UI函数
+faq_page_ui <- function() {
+  div(id = "faq-page", style = "display: none;",
+    div(class = "page-content faq-page",
+      h1("FAQs & Support"),
+      p("Find quick answers, learn about the project, and reach the team."),
+      div(class = "faq-grid",
+        div(class = "faq-column",
+          div(class = "faq-card",
+            h2("Data Sources"),
+            tags$ul(class = "faq-list placeholder",
+              tags$li("Placeholder dataset 1"),
+              tags$li("Placeholder dataset 2"),
+              tags$li("Placeholder dataset 3")
+            )
+          ),
+          div(class = "faq-card",
+            h2("Contact"),
+            p(HTML("Email: <a href='mailto:melexplorer@unimelb.edu.au'>melexplorer@unimelb.edu.au</a>"))
+          )
+        ),
+        div(class = "faq-column",
+          div(class = "faq-card",
+            h2("About the Project"),
+            p("Melbourne Explorer is a student-built dashboard that helps visitors plan their trip with weather, attractions, budget insights, and mobility guidance.")
+          ),
+          div(class = "faq-card creators-card",
+            h2("Creators"),
+            div(class = "creators-grid",
+              tagList(.list = lapply(1:4, function(i) {
+                div(class = "creator-card",
+                  div(class = "creator-avatar", "Photo"),
+                  div(class = "creator-meta",
+                    div(class = "creator-name", sprintf("Member %d", i)),
+                    div(class = "creator-id", "Student ID")
+                  )
+                )
+              }))
+            )
+          )
+        )
       )
     )
   )
@@ -169,7 +203,7 @@ ui <- fluidPage(
         actionLink("nav_weather", "Weather", class = "nav-item"),
         actionLink("nav_landmarks", "Landmarks", class = "nav-item"),
         actionLink("nav_budget", "Budget", class = "nav-item"),
-        actionLink("nav_crowd", "Crowd", class = "nav-item")
+        actionLink("nav_faq", "FAQs", class = "nav-item")
       )
     ),
     
@@ -179,7 +213,7 @@ ui <- fluidPage(
       weather_page_ui(),
       landmarks_page_ui(),
       budget_page_ui(),
-      crowd_page_ui()
+      faq_page_ui()
     ),
     
     # Footer
@@ -204,7 +238,7 @@ server <- function(input, output, session) {
     shinyjs::hide("weather-page")
     shinyjs::hide("landmarks-page")
     shinyjs::hide("budget-page")
-    shinyjs::hide("crowd-page")
+    shinyjs::hide("faq-page")
     
     # 显示目标页面
     shinyjs::show(paste0(page_name, "-page"))
@@ -228,15 +262,15 @@ server <- function(input, output, session) {
     show_page("budget")
   })
   
-  observeEvent(input$nav_crowd, {
-    show_page("crowd")
+  observeEvent(input$nav_faq, {
+    show_page("faq")
   })
   
   # Feature card buttons -> navigate to pages
   observeEvent(input$go_weather,   { show_page("weather") })
   observeEvent(input$go_landmarks, { show_page("landmarks") })
   observeEvent(input$go_budget,    { show_page("budget") })
-  observeEvent(input$go_crowd,     { show_page("crowd") })
+  observeEvent(input$go_faq,       { show_page("faq") })
   
        
   # 初始化时显示首页
@@ -247,3 +281,4 @@ server <- function(input, output, session) {
 
 # 运行应用
 shinyApp(ui = ui, server = server)
+# runApp('Project3_Dashboard.R')

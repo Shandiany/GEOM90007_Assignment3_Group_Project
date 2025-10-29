@@ -36,7 +36,7 @@ body {
   background: linear-gradient(135deg, #F5F8F7 0%, #E8F5E8 100%);
   padding: 3rem 2rem; /* reduced */
   text-align: center;
-  min-height: 35vh; /* hero 的宽度 */
+  min-height: 35vh; /* hero min-height */
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   border-bottom: 1px solid #e5e7eb; /* separation */
 }
@@ -44,16 +44,16 @@ body {
 .hero-subtitle { color: #666; font-size: 1.5rem; max-width: 600px; line-height: 1.6; }
 
 /* Feature cards */
-.feature-cards { padding: 4rem 2rem; background-color: #fff; }  /*  调整上下留白 (越大卡片离 hero 越远) */
-.cards-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto; } /* 控制每行放几张卡片 + 卡片间距 + 总宽度 */
+.feature-cards { padding: 4rem 2rem; background-color: #fff; }  /* adjust vertical spacing */
+.cards-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto; } /* grid columns, spacing, max width */
 .feature-card { background-color: #fff; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all .3s ease; cursor: pointer; border: 2px solid transparent; height: 320px;}
 .feature-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); border-color: #28A27C; }
-.feature-card.green { background-color: #28A27C; color: #fff; } /* 调整feature card 颜色 */
-.feature-card.white { background-color: #F0EAE2; color: #333; } /* 调整feature card 颜色 */
+.feature-card.green { background-color: #28A27C; color: #fff; } /* feature card color */
+.feature-card.white { background-color: #F0EAE2; color: #333; } /* feature card color */
 .card-header-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
 .card-icon { font-size: 2rem; margin: 0; }
-.card-title { font-size: 1.5rem; font-weight: 700; margin: 0; }  /* 调整feature card title */
-.card-description { font-size: 1.3rem; line-height: 1.5; margin-bottom: 1rem; } /* 调整feature card description */
+.card-title { font-size: 1.5rem; font-weight: 700; margin: 0; }  /* feature card title */
+.card-description { font-size: 1.3rem; line-height: 1.5; margin-bottom: 1rem; } /* feature card description */
 /* card media for feature cards */
 .card-media { height: 100px; border-radius: 8px; overflow: hidden; margin-top: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 .card-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -78,7 +78,7 @@ body {
   gap: 0.75rem;
 }
 
-/* Feature card buttons 按钮*/
+/* Feature card buttons */
 .chart-button {
   background-color: rgba(255,255,255,0.2);
   color: #fff;
@@ -115,9 +115,6 @@ body {
 .footer-content { max-width: 1200px; margin: 0 auto; }
 .footer-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #28A27C; }
 .footer-description { font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; color: #ccc; }
-.social-links { display: flex; justify-content: center; gap: 1rem; }
-.social-link { color: #ccc; font-size: 1.5rem; text-decoration: none; transition: color .3s ease; }
-.social-link:hover { color: #28A27C; }
 
 /* Page Content */
 .page-content {
@@ -283,7 +280,7 @@ body {
 }
 .budget-top-controls .budget-category .radio label:hover { background: #f3f4f6; }
 .budget-top-controls .budget-category input[type="radio"] { accent-color: #28A27C; }
-/* 对齐控件标题并强化视觉 */
+/* Align control labels */
 .budget-top-controls .control-group label {
   display: block;
   margin-bottom: 0.25rem;
@@ -292,13 +289,11 @@ body {
 }
 
 .budget-mid-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-.budget-bottom-full { }
 
 /* Generic chart container with white background */
 .chart-container { background: #fff; border: 1px solid rgba(40,162,124,0.12); border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 8px 20px rgba(17,24,39,0.08); }
 .chart-container h3 { color: #28A27C; font-size: 1.3rem; font-weight: 700; margin: 0 0 0.5rem; border-bottom: 2px solid #28A27C; padding-bottom: 0.5rem; }
 .currency-info { color: #6b7280; margin-bottom: 0.5rem; font-size: 0.95rem; }
-.placeholder-content { color: #9ca3af; font-style: italic; }
 
 /* Hide Plotly modebar globally (safety net; also disabled via config) */
 .js-plotly-plot .modebar { display: none !important; }
@@ -331,30 +326,6 @@ tableau-viz {
   width: 100% !important;
 }
 
-.landmarks-tableau-card {
-  background: #fff;
-  border: 1px solid rgba(40,162,124,0.12);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 8px 20px rgba(17,24,39,0.08);
-  display: flex;
-  flex-direction: column;
-}
-.landmarks-tableau-card h3 {
-  color: #28A27C;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0 0 1rem;
-  border-bottom: 2px solid #28A27C;
-  padding-bottom: 0.5rem;
-}
-.landmarks-tableau-card tableau-viz {
-  width: 100%;
-  height: 620px;
-  border-radius: 8px;
-  overflow: hidden;
-  min-height: 620px;
-}
 .tableau-embed-container { position: relative; width: 100%; min-height: 620px; }
 .tableau-embed-container iframe { width: 100%; height: 100%; min-height: 620px; border: none; border-radius: 8px; }
 .tableau-placeholder { background: #F5F8F7; border: 1px dashed rgba(40,162,124,0.35); border-radius: 10px; padding: 1.25rem; color: #4b5563; font-size: 0.95rem; line-height: 1.5; }

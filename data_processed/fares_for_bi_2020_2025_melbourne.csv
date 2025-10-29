@@ -1,0 +1,211 @@
+year,month,yearmonth,port1,port2,route,value,real
+2025,2,202502,Adelaide,Melbourne,Adelaide - Melbourne,230.0,232.615494
+2025,2,202502,Brisbane,Melbourne,Brisbane - Melbourne,195.0,197.217484
+2025,2,202502,Cairns,Melbourne,Cairns - Melbourne,254.0,256.8884151
+2025,2,202502,Canberra,Melbourne,Canberra - Melbourne,294.0,297.3432836
+2025,2,202502,Darwin,Melbourne,Darwin - Melbourne,578.01,584.5829638
+2025,2,202502,Devonport,Melbourne,Devonport - Melbourne,348.0,351.9573561
+2025,2,202502,Hobart,Melbourne,Hobart - Melbourne,226.0,228.5700071
+2025,2,202502,Launceston,Melbourne,Launceston - Melbourne,327.99,331.7198081
+2025,2,202502,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,221.0,223.5131485
+2025,2,202502,Melbourne,Gold Coast,Melbourne - Gold Coast,315.01,318.5922033
+2025,2,202502,Melbourne,Mildura,Melbourne - Mildura,358.0,362.0710732
+2025,2,202502,Melbourne,Perth,Melbourne - Perth,628.0,635.1414357
+2025,2,202502,Melbourne,Sydney,Melbourne - Sydney,255.0,257.8997868
+2025,2,202502,Melbourne,Townsville,Melbourne - Townsville,312.0,315.5479744
+2025,2,202502,Melbourne,Newcastle,Melbourne - Newcastle,299.0,302.4001421
+2025,3,202503,Melbourne,Sydney,Melbourne - Sydney,166.0,167.8877043
+2025,3,202503,Adelaide,Melbourne,Adelaide - Melbourne,360.0,364.0938166
+2025,3,202503,Brisbane,Melbourne,Brisbane - Melbourne,284.0,287.2295665
+2025,3,202503,Melbourne,Perth,Melbourne - Perth,478.0,483.4356787
+2025,3,202503,Hobart,Melbourne,Hobart - Melbourne,176.0,178.0014215
+2025,3,202503,Canberra,Melbourne,Canberra - Melbourne,329.01,332.7514072
+2025,3,202503,Launceston,Melbourne,Launceston - Melbourne,169.0,170.9218195
+2025,3,202503,Melbourne,Gold Coast,Melbourne - Gold Coast,260.01,262.9667591
+2025,3,202503,Cairns,Melbourne,Cairns - Melbourne,236.0,238.6837242
+2025,3,202503,Devonport,Melbourne,Devonport - Melbourne,427.47,432.3310661
+2025,3,202503,Melbourne,Mildura,Melbourne - Mildura,358.0,362.0710732
+2025,3,202503,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,266.0,269.0248756
+2025,3,202503,Melbourne,Newcastle,Melbourne - Newcastle,188.0,190.137882
+2025,3,202503,Darwin,Melbourne,Darwin - Melbourne,607.0,613.9026297
+2025,3,202503,Melbourne,Townsville,Melbourne - Townsville,236.0,238.6837242
+2025,4,202504,Melbourne,Sydney,Melbourne - Sydney,178.0,178.753705
+2025,4,202504,Adelaide,Melbourne,Adelaide - Melbourne,265.0,266.1220889
+2025,4,202504,Brisbane,Melbourne,Brisbane - Melbourne,314.0,315.3295695
+2025,4,202504,Melbourne,Perth,Melbourne - Perth,668.0,670.8285109
+2025,4,202504,Hobart,Melbourne,Hobart - Melbourne,338.0,339.4311927
+2025,4,202504,Canberra,Melbourne,Canberra - Melbourne,258.0,259.0924488
+2025,4,202504,Launceston,Melbourne,Launceston - Melbourne,517.99,520.1833239
+2025,4,202504,Melbourne,Gold Coast,Melbourne - Gold Coast,179.0,179.7579393
+2025,4,202504,Cairns,Melbourne,Cairns - Melbourne,416.0,417.7614679
+2025,4,202504,Devonport,Melbourne,Devonport - Melbourne,378.0,379.6005646
+2025,4,202504,Melbourne,Mildura,Melbourne - Mildura,338.0,339.4311927
+2025,4,202504,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,401.0,402.6979534
+2025,4,202504,Melbourne,Newcastle,Melbourne - Newcastle,118.0,118.4996471
+2025,4,202504,Darwin,Melbourne,Darwin - Melbourne,438.0,439.8546224
+2025,4,202504,Melbourne,Townsville,Melbourne - Townsville,347.0,348.4693013
+2025,5,202505,Adelaide,Melbourne,Adelaide - Melbourne,185.0,185.7833451
+2025,5,202505,Brisbane,Melbourne,Brisbane - Melbourne,190.0,190.8045166
+2025,5,202505,Cairns,Melbourne,Cairns - Melbourne,236.0,236.9992943
+2025,5,202505,Canberra,Melbourne,Canberra - Melbourne,208.0,208.8807339
+2025,5,202505,Darwin,Melbourne,Darwin - Melbourne,438.0,439.8546224
+2025,5,202505,Devonport,Melbourne,Devonport - Melbourne,358.0,359.5158786
+2025,5,202505,Hobart,Melbourne,Hobart - Melbourne,308.0,309.3041637
+2025,5,202505,Launceston,Melbourne,Launceston - Melbourne,284.0,285.2025406
+2025,5,202505,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,190.0,190.8045166
+2025,5,202505,Melbourne,Gold Coast,Melbourne - Gold Coast,179.0,179.7579393
+2025,5,202505,Melbourne,Mildura,Melbourne - Mildura,368.0,369.5582216
+2025,5,202505,Melbourne,Perth,Melbourne - Perth,408.0,409.7275935
+2025,5,202505,Melbourne,Sydney,Melbourne - Sydney,166.0,166.7028934
+2025,5,202505,Melbourne,Townsville,Melbourne - Townsville,332.0,333.4057869
+2025,5,202505,Melbourne,Newcastle,Melbourne - Newcastle,128.0,128.5419901
+2025,6,202506,Adelaide,Melbourne,Adelaide - Melbourne,160.0,160.6774876
+2025,6,202506,Brisbane,Melbourne,Brisbane - Melbourne,250.0,251.0585745
+2025,6,202506,Cairns,Melbourne,Cairns - Melbourne,376.0,377.592096
+2025,6,202506,Canberra,Melbourne,Canberra - Melbourne,168.0,168.711362
+2025,6,202506,Darwin,Melbourne,Darwin - Melbourne,758.0,761.2095977
+2025,6,202506,Devonport,Melbourne,Devonport - Melbourne,338.0,339.4311927
+2025,6,202506,Hobart,Melbourne,Hobart - Melbourne,138.0,138.5843331
+2025,6,202506,Launceston,Melbourne,Launceston - Melbourne,104.0,104.440367
+2025,6,202506,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,289.0,290.2237121
+2025,6,202506,Melbourne,Gold Coast,Melbourne - Gold Coast,208.0,208.8807339
+2025,6,202506,Melbourne,Mildura,Melbourne - Mildura,338.0,339.4311927
+2025,6,202506,Melbourne,Perth,Melbourne - Perth,548.0,550.3203952
+2025,6,202506,Melbourne,Sydney,Melbourne - Sydney,166.0,166.7028934
+2025,6,202506,Melbourne,Townsville,Melbourne - Townsville,706.0,708.9894143
+2025,6,202506,Melbourne,Newcastle,Melbourne - Newcastle,158.0,158.6690191
+2025,7,202507,Adelaide,Melbourne,Adelaide - Melbourne,164.0,164.3464789
+2025,7,202507,Brisbane,Melbourne,Brisbane - Melbourne,281.0,281.593662
+2025,7,202507,Cairns,Melbourne,Cairns - Melbourne,292.0,292.6169014
+2025,7,202507,Canberra,Melbourne,Canberra - Melbourne,172.0,172.3633803
+2025,7,202507,Darwin,Melbourne,Darwin - Melbourne,738.0,739.5591549
+2025,7,202507,Devonport,Melbourne,Devonport - Melbourne,338.0,338.7140845
+2025,7,202507,Hobart,Melbourne,Hobart - Melbourne,337.0,337.7119718
+2025,7,202507,Launceston,Melbourne,Launceston - Melbourne,124.0,124.2619718
+2025,7,202507,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,312.0,312.6591549
+2025,7,202507,Melbourne,Gold Coast,Melbourne - Gold Coast,224.0,224.4732394
+2025,7,202507,Melbourne,Mildura,Melbourne - Mildura,338.0,338.7140845
+2025,7,202507,Melbourne,Perth,Melbourne - Perth,471.0,471.9950704
+2025,7,202507,Melbourne,Sydney,Melbourne - Sydney,165.0,165.3485915
+2025,7,202507,Melbourne,Townsville,Melbourne - Townsville,297.0,297.6274648
+2025,7,202507,Melbourne,Newcastle,Melbourne - Newcastle,120.0,120.2535211
+2025,8,202508,Adelaide,Melbourne,Adelaide - Melbourne,144.0,144.3042254
+2025,8,202508,Brisbane,Melbourne,Brisbane - Melbourne,257.0,257.5429577
+2025,8,202508,Cairns,Melbourne,Cairns - Melbourne,251.0,251.5302817
+2025,8,202508,Canberra,Melbourne,Canberra - Melbourne,250.0,250.528169
+2025,8,202508,Darwin,Melbourne,Darwin - Melbourne,553.0,554.1683099
+2025,8,202508,Devonport,Melbourne,Devonport - Melbourne,338.0,338.7140845
+2025,8,202508,Hobart,Melbourne,Hobart - Melbourne,181.0,181.3823944
+2025,8,202508,Launceston,Melbourne,Launceston - Melbourne,106.0,106.2239437
+2025,8,202508,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,386.0,386.815493
+2025,8,202508,Melbourne,Gold Coast,Melbourne - Gold Coast,236.0,236.4985915
+2025,8,202508,Melbourne,Mildura,Melbourne - Mildura,338.0,338.7140845
+2025,8,202508,Melbourne,Perth,Melbourne - Perth,470.0,470.9929577
+2025,8,202508,Melbourne,Sydney,Melbourne - Sydney,182.0,182.384507
+2025,8,202508,Melbourne,Townsville,Melbourne - Townsville,300.0,300.6338028
+2025,8,202508,Melbourne,Newcastle,Melbourne - Newcastle,120.0,120.2535211
+2025,9,202509,Adelaide,Melbourne,Adelaide - Melbourne,335.0,335.7077465
+2025,9,202509,Brisbane,Melbourne,Brisbane - Melbourne,330.0,330.6971831
+2025,9,202509,Cairns,Melbourne,Cairns - Melbourne,385.0,385.8133803
+2025,9,202509,Canberra,Melbourne,Canberra - Melbourne,324.0,324.684507
+2025,9,202509,Darwin,Melbourne,Darwin - Melbourne,582.0,583.2295775
+2025,9,202509,Devonport,Melbourne,Devonport - Melbourne,378.0,378.7985915
+2025,9,202509,Hobart,Melbourne,Hobart - Melbourne,182.0,182.384507
+2025,9,202509,Launceston,Melbourne,Launceston - Melbourne,242.0,242.5112676
+2025,9,202509,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,418.0,418.8830986
+2025,9,202509,Melbourne,Gold Coast,Melbourne - Gold Coast,346.0,346.7309859
+2025,9,202509,Melbourne,Mildura,Melbourne - Mildura,338.0,338.7140845
+2025,9,202509,Melbourne,Perth,Melbourne - Perth,601.0,602.2697183
+2025,9,202509,Melbourne,Sydney,Melbourne - Sydney,190.0,190.4014085
+2025,9,202509,Melbourne,Townsville,Melbourne - Townsville,638.0,639.3478873
+2025,9,202509,Melbourne,Newcastle,Melbourne - Newcastle,208.0,208.4394366
+2025,10,202510,Adelaide,Melbourne,Adelaide - Melbourne,291.0,291.0
+2025,10,202510,Brisbane,Melbourne,Brisbane - Melbourne,278.0,278.0
+2025,10,202510,Cairns,Melbourne,Cairns - Melbourne,312.99,312.99
+2025,10,202510,Canberra,Melbourne,Canberra - Melbourne,388.0,388.0
+2025,10,202510,Darwin,Melbourne,Darwin - Melbourne,812.01,812.01
+2025,10,202510,Devonport,Melbourne,Devonport - Melbourne,398.0,398.0
+2025,10,202510,Hobart,Melbourne,Hobart - Melbourne,321.01,321.01
+2025,10,202510,Launceston,Melbourne,Launceston - Melbourne,355.0,355.0
+2025,10,202510,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,350.0,350.0
+2025,10,202510,Melbourne,Gold Coast,Melbourne - Gold Coast,303.0,303.0
+2025,10,202510,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,10,202510,Melbourne,Perth,Melbourne - Perth,548.0,548.0
+2025,10,202510,Melbourne,Sydney,Melbourne - Sydney,190.0,190.0
+2025,10,202510,Melbourne,Townsville,Melbourne - Townsville,481.0,481.0
+2025,10,202510,Melbourne,Newcastle,Melbourne - Newcastle,186.0,186.0
+2025,6,202506,Adelaide,Melbourne,Adelaide - Melbourne,160.0,160.0
+2025,6,202506,Brisbane,Melbourne,Brisbane - Melbourne,250.0,250.0
+2025,6,202506,Cairns,Melbourne,Cairns - Melbourne,376.0,376.0
+2025,6,202506,Canberra,Melbourne,Canberra - Melbourne,168.0,168.0
+2025,6,202506,Darwin,Melbourne,Darwin - Melbourne,758.0,758.0
+2025,6,202506,Devonport,Melbourne,Devonport - Melbourne,338.0,338.0
+2025,6,202506,Hobart,Melbourne,Hobart - Melbourne,138.0,138.0
+2025,6,202506,Launceston,Melbourne,Launceston - Melbourne,104.0,104.0
+2025,6,202506,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,289.0,289.0
+2025,6,202506,Melbourne,Gold Coast,Melbourne - Gold Coast,208.0,208.0
+2025,6,202506,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,6,202506,Melbourne,Perth,Melbourne - Perth,548.0,548.0
+2025,6,202506,Melbourne,Sydney,Melbourne - Sydney,166.0,166.0
+2025,6,202506,Melbourne,Townsville,Melbourne - Townsville,706.0,706.0
+2025,6,202506,Melbourne,Newcastle,Melbourne - Newcastle,158.0,158.0
+2025,7,202507,Adelaide,Melbourne,Adelaide - Melbourne,164.0,164.0
+2025,7,202507,Brisbane,Melbourne,Brisbane - Melbourne,281.0,281.0
+2025,7,202507,Cairns,Melbourne,Cairns - Melbourne,292.0,292.0
+2025,7,202507,Canberra,Melbourne,Canberra - Melbourne,172.0,172.0
+2025,7,202507,Darwin,Melbourne,Darwin - Melbourne,738.0,738.0
+2025,7,202507,Devonport,Melbourne,Devonport - Melbourne,338.0,338.0
+2025,7,202507,Hobart,Melbourne,Hobart - Melbourne,337.0,337.0
+2025,7,202507,Launceston,Melbourne,Launceston - Melbourne,124.0,124.0
+2025,7,202507,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,312.0,312.0
+2025,7,202507,Melbourne,Gold Coast,Melbourne - Gold Coast,224.0,224.0
+2025,7,202507,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,7,202507,Melbourne,Perth,Melbourne - Perth,471.0,471.0
+2025,7,202507,Melbourne,Sydney,Melbourne - Sydney,165.0,165.0
+2025,7,202507,Melbourne,Townsville,Melbourne - Townsville,297.0,297.0
+2025,7,202507,Melbourne,Newcastle,Melbourne - Newcastle,120.0,120.0
+2025,8,202508,Adelaide,Melbourne,Adelaide - Melbourne,144.0,144.0
+2025,8,202508,Brisbane,Melbourne,Brisbane - Melbourne,257.0,257.0
+2025,8,202508,Cairns,Melbourne,Cairns - Melbourne,251.0,251.0
+2025,8,202508,Canberra,Melbourne,Canberra - Melbourne,250.0,250.0
+2025,8,202508,Darwin,Melbourne,Darwin - Melbourne,553.0,553.0
+2025,8,202508,Devonport,Melbourne,Devonport - Melbourne,338.0,338.0
+2025,8,202508,Hobart,Melbourne,Hobart - Melbourne,181.0,181.0
+2025,8,202508,Launceston,Melbourne,Launceston - Melbourne,106.0,106.0
+2025,8,202508,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,386.0,386.0
+2025,8,202508,Melbourne,Gold Coast,Melbourne - Gold Coast,236.0,236.0
+2025,8,202508,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,8,202508,Melbourne,Perth,Melbourne - Perth,470.0,470.0
+2025,8,202508,Melbourne,Sydney,Melbourne - Sydney,182.0,182.0
+2025,8,202508,Melbourne,Townsville,Melbourne - Townsville,300.0,300.0
+2025,8,202508,Melbourne,Newcastle,Melbourne - Newcastle,120.0,120.0
+2025,9,202509,Adelaide,Melbourne,Adelaide - Melbourne,335.0,335.0
+2025,9,202509,Brisbane,Melbourne,Brisbane - Melbourne,330.0,330.0
+2025,9,202509,Cairns,Melbourne,Cairns - Melbourne,385.0,385.0
+2025,9,202509,Canberra,Melbourne,Canberra - Melbourne,324.0,324.0
+2025,9,202509,Darwin,Melbourne,Darwin - Melbourne,582.0,582.0
+2025,9,202509,Devonport,Melbourne,Devonport - Melbourne,378.0,378.0
+2025,9,202509,Hobart,Melbourne,Hobart - Melbourne,182.0,182.0
+2025,9,202509,Launceston,Melbourne,Launceston - Melbourne,242.0,242.0
+2025,9,202509,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,418.0,418.0
+2025,9,202509,Melbourne,Gold Coast,Melbourne - Gold Coast,346.0,346.0
+2025,9,202509,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,9,202509,Melbourne,Perth,Melbourne - Perth,601.0,601.0
+2025,9,202509,Melbourne,Sydney,Melbourne - Sydney,190.0,190.0
+2025,9,202509,Melbourne,Townsville,Melbourne - Townsville,638.0,638.0
+2025,9,202509,Melbourne,Newcastle,Melbourne - Newcastle,208.0,208.0
+2025,10,202510,Adelaide,Melbourne,Adelaide - Melbourne,291.0,291.0
+2025,10,202510,Brisbane,Melbourne,Brisbane - Melbourne,278.0,278.0
+2025,10,202510,Cairns,Melbourne,Cairns - Melbourne,312.99,312.99
+2025,10,202510,Canberra,Melbourne,Canberra - Melbourne,388.0,388.0
+2025,10,202510,Darwin,Melbourne,Darwin - Melbourne,812.01,812.01
+2025,10,202510,Devonport,Melbourne,Devonport - Melbourne,398.0,398.0
+2025,10,202510,Hobart,Melbourne,Hobart - Melbourne,321.01,321.01
+2025,10,202510,Launceston,Melbourne,Launceston - Melbourne,355.0,355.0
+2025,10,202510,Sunshine Coast,Melbourne,Sunshine Coast - Melbourne,350.0,350.0
+2025,10,202510,Melbourne,Gold Coast,Melbourne - Gold Coast,303.0,303.0
+2025,10,202510,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,10,202510,Melbourne,Perth,Melbourne - Perth,548.0,548.0
+2025,10,202510,Melbourne,Sydney,Melbourne - Sydney,190.0,190.0
+2025,10,202510,Melbourne,Townsville,Melbourne - Townsville,481.0,481.0
+2025,10,202510,Melbourne,Newcastle,Melbourne - Newcastle,186.0,186.0

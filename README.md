@@ -1,5 +1,6 @@
-Melbourne Explorer — R Shiny Dashboard
+Melbourne Explorer Dashboard
 =====================================
+Melbourne Explorer was developed as part of GEOM90007 group project at the University of Melbourne. Our chosen target audience is tourists visiting Melbourne, and the theme focuses on trip planning and city exploration,including weather insights, major attractions, and budget estimation. The dashboard was built using R Shiny and Tableau, combining the strengths of both platforms to deliver dynamic and user-friendly data exploration.
 
 Run locally
 -----------
@@ -7,6 +8,9 @@ Requirements:
 
 - R 4.2+ (or recent)
 - Packages: `shiny`, `plotly`, `dplyr`, `shinyjs`, `httr`, `jsonlite`, `lubridate`, `readxl`, `htmltools`, `leaflet`.
+```r
+source('install_packages.R')
+```
 
 Launch the app from the repository root:
 
@@ -14,8 +18,26 @@ Launch the app from the repository root:
 shiny::runApp('Project3_Dashboard.R')
 ```
 
-Data layout
+
+Group Member
 -----------
+- TianxiChen 1585095
+- Yushu Hou 1575948
+- Zeyu Wang 1255384
+- Zhihan Wang 1116250
+
+
+
+Tableau integration
+-------------------
+This app embeds a Tableau Public visualization on the Landmarks page using a helper library.
+
+- Helper: `tableau-in-shiny-v1.2.R` (loaded at startup via `source("tableau-in-shiny-v1.2.R")`)
+- The `tableau/` folder (e.g., `tableau/landmarks_restaurants.md`) is for notes/assets. Runtime embedding is done directly from a Tableau Public URL.
+
+
+Data sources
+------------
 Place preprocessed data files in `data_processed/` (required):
 
 - `microclimate.xlsx`
@@ -29,17 +51,6 @@ Static assets (images) are served from `www/`. For the built‑in cards and crea
 - `www/images/weather.jpg`, `www/images/landmark.jpg`, `www/images/budget.jpg`, `www/images/support.jpg`
 - `www/images/creators/p1.png` … `p4.png`
 - `www/images/unimelb_logo.png`
-
-
-Tableau integration
--------------------
-This app embeds a Tableau Public visualization on the Landmarks page using a helper library.
-
-- Helper: `tableau-in-shiny-v1.2.R` (loaded at startup via `source("tableau-in-shiny-v1.2.R")`)
-- The `tableau/` folder (e.g., `tableau/landmarks_restaurants.md`) is for notes/assets. Runtime embedding is done directly from a Tableau Public URL.
-
-
-Data sources
 ------------
 - City of Melbourne Open Data – Microclimate Sensors Data: https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/information/
 - Open‑Meteo API: https://open-meteo.com/en/docs

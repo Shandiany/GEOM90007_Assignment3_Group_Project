@@ -1,0 +1,10 @@
+name: melbourne-explorer
+title: Melbourne Explorer
+username: shandiany
+account: shandiany
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15905598
+bundleId: 11102259
+url: https://shandiany.shinyapps.io/melbourne-explorer/
+version: 1

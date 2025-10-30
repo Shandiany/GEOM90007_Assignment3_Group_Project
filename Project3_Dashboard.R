@@ -36,9 +36,8 @@ load_weather_data <- function() {
     }
     data <- read_excel(data_path)
     
-    # Filter the specific sensor location
+    # Data file already contains the desired site; keep all rows
     data <- data %>%
-      filter(SensorLocation == "101 Collins St L11 Rooftop") %>%
       na.omit()
     
     # Convert time column
@@ -424,6 +423,10 @@ faq_page_ui <- function() {
                 "<a href='https://twemoji-cheatsheet.vercel.app/' target='_blank'>link</a>"
               )),
               tags$li(HTML(
+                "ABS – Overseas Arrivals and Departures, Australia · ",
+                "<a href='https://www.abs.gov.au/statistics/industry/tourism-and-transport/overseas-arrivals-and-departures-australia/latest-release' target='_blank'>link</a>"
+              )),
+              tags$li(HTML(
                 "Image sources · ",
                 "<a href='http://xhslink.com/o/5hbQV0lkb0v' target='_blank'>1</a>",
                 " &nbsp; ",
@@ -790,7 +793,7 @@ server <- function(input, output, session) {
           margin = list(l = 70, r = 50, t = 60, b = 60)
         )
       
-      p <- plotly::event_register(p, "plotly_click")
+      p <- plotly::event_register(p, 'plotly_click')
       p
     } else {
       # Monthly view: daily avg
@@ -834,18 +837,17 @@ server <- function(input, output, session) {
           margin = list(l = 50, r = 20, t = 60, b = 50)
         )
       
-      p <- plotly::event_register(p, "plotly_click")
+      p <- plotly::event_register(p, 'plotly_click')
       p
     }
   })
   
-  # Toggle yearly/monthly on click
-  observeEvent(plotly::event_data("plotly_click", source = "temp_chart"), ignoreInit = TRUE, {
+  observeEvent(plotly::event_data("plotly_click", source = "temp_chart"), {
     click_data <- plotly::event_data("plotly_click", source = "temp_chart")
     req(click_data)
     
     if (temp_view() == "yearly") {
-      # Month clicked -> monthly view
+      # Month clicked -> switch to monthly view
       month_clicked <- click_data$x
       month_num <- which(month.abb == month_clicked)
       
@@ -854,11 +856,11 @@ server <- function(input, output, session) {
         temp_view("monthly")
       }
     } else {
-      # Click to return yearly view
+      # Click to return to yearly view
       temp_view("yearly")
       selected_month(NULL)
     }
-  })
+  }, ignoreInit = TRUE)
   
   # Annual humidity trend
   output$humidity_plot <- renderPlotly({

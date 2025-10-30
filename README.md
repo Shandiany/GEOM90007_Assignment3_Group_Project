@@ -2,6 +2,8 @@ Melbourne Explorer Dashboard
 =====================================
 Melbourne Explorer was developed as part of GEOM90007 group project at the University of Melbourne. Our chosen target audience is tourists visiting Melbourne, and the theme focuses on trip planning and city exploration,including weather insights, major attractions, and budget estimation. The dashboard was built using R Shiny and Tableau, combining the strengths of both platforms to deliver dynamic and user-friendly data exploration.
 
+Demo: 
+
 Run locally
 -----------
 Requirements:
@@ -18,14 +20,12 @@ Launch the app from the repository root:
 shiny::runApp('Project3_Dashboard.R')
 ```
 
-
 Group Member
 -----------
 - TianxiChen 1585095
 - Yushu Hou 1575948
 - Zeyu Wang 1255384
 - Zhihan Wang 1116250
-
 
 
 Tableau integration
@@ -63,3 +63,4 @@ Static assets (images) are served from `www/`. For the built‑in cards and crea
 - YouTube: Coxcomb Chart in Tableau: https://youtu.be/YokyjNsyNZ4?si=xTtBAOFjbVrX382l
 - Markers (Emoji): https://twemoji-cheatsheet.vercel.app/
 - Image sources: 1) http://xhslink.com/o/5hbQV0lkb0v  2) http://xhslink.com/o/Afdqdr0DLw1  3) http://xhslink.com/o/7KoX7nnSgrN  4) http://xhslink.com/o/59RkNailTaq
+- ABS – Overseas Arrivals and Departures, Australia: https://www.abs.gov.au/statistics/industry/tourism-and-transport/overseas-arrivals-and-departures-australia/latest-release

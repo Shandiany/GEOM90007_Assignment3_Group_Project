@@ -2,7 +2,6 @@ Melbourne Explorer Dashboard
 =====================================
 Melbourne Explorer was developed as part of GEOM90007 group project at the University of Melbourne. Our chosen target audience is tourists visiting Melbourne, and the theme focuses on trip planning and city exploration,including weather insights, major attractions, and budget estimation. The dashboard was built using R Shiny and Tableau, combining the strengths of both platforms to deliver dynamic and user-friendly data exploration.
 
-Demo: 
 
 Run locally
 -----------
@@ -32,6 +31,7 @@ Tableau integration
 -------------------
 This app embeds a Tableau Public visualization on the Landmarks page using a helper library.
 
+- Tableau Public URL: https://public.tableau.com/views/melbourne_restaurant_landmarks/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 - Helper: `tableau-in-shiny-v1.2.R` (loaded at startup via `source("tableau-in-shiny-v1.2.R")`)
 - The `tableau/` folder (e.g., `tableau/landmarks_restaurants.md`) is for notes/assets. Runtime embedding is done directly from a Tableau Public URL.
 
@@ -49,7 +49,7 @@ Place preprocessed data files in `data_processed/` (required):
 Static assets (images) are served from `www/`. For the built‑in cards and creator photos, the app expects:
 
 - `www/images/weather.jpg`, `www/images/landmark.jpg`, `www/images/budget.jpg`, `www/images/support.jpg`
-- `www/images/creators/p1.png` … `p4.png`
+- `www/images/creators/p1.png` to `p4.png`
 - `www/images/unimelb_logo.png`
 ------------
 - City of Melbourne Open Data – Microclimate Sensors Data: https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data/information/
@@ -64,3 +64,22 @@ Static assets (images) are served from `www/`. For the built‑in cards and crea
 - Markers (Emoji): https://twemoji-cheatsheet.vercel.app/
 - Image sources: 1) http://xhslink.com/o/5hbQV0lkb0v  2) http://xhslink.com/o/Afdqdr0DLw1  3) http://xhslink.com/o/7KoX7nnSgrN  4) http://xhslink.com/o/59RkNailTaq
 - ABS – Overseas Arrivals and Departures, Australia: https://www.abs.gov.au/statistics/industry/tourism-and-transport/overseas-arrivals-and-departures-australia/latest-release
+
+
+Declaration 
+------------
+
+- I acknowledge the use of ChatGPT [https://chat.openai.com/] to assist this assessment.
+
+- I entered prompts such as:
+  - Cleaning and simplifying Shiny code and identifying possible issues
+  -  Explain how this works ????
+  - What does this CSS do?
+  -  Rewriting comments 
+  -  Please teach me how this chart is implemented based on this screenshot
+
+- I used the output to:
+  - Clean and refactor my code to improve readability and reduce redundancy
+  - Detect and resolve logic or syntax problems
+  -  Learn new Shiny features and visualization techniques
+  - Rewrite code comments

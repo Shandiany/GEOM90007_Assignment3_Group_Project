@@ -1,6 +1,31 @@
 # ============================================================================
 # Melbourne Explorer - R Shiny Dashboard
+# team number 101
+# GEOM90007 Assignment 3
+# 03/11/2025 Semester 2
 # ============================================================================
+
+###############
+# Declaration #
+###############
+
+#########################################################################################
+# I acknowledge the use of ChatGPT [https://chat.openai.com/] to assist this assessment.
+
+# I entered prompts such as:
+#### Cleaning and simplifying Shiny code and identifying possible issues
+#### Explain how this works ????
+#### What does this CSS do?
+#### Rewriting comments 
+#### Please teach me how this chart is implemented based on this screenshot
+
+# I used the output to:
+#### Clean and refactor my code to improve readability and reduce redundancy
+#### Detect and resolve logic or syntax problems
+#### Learn new Shiny features and visualization techniques
+#### Rewrite code comments
+#########################################################################################
+
 
 # ============================================================================
 # 1. Libraries
@@ -46,7 +71,7 @@ load_weather_data <- function() {
     # Keep records after 2024-11-01
     cutoff_date <- as.POSIXct("2024-11-01", tz = "Australia/Melbourne")
     data <- data %>% filter(Time >= cutoff_date)
-    
+     
     # Add month and day fields
     data$Month <- month(data$Time)
     data$MonthName <- month(data$Time, label = TRUE, abbr = TRUE)
